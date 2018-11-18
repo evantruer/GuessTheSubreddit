@@ -7,10 +7,24 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="formAbout" runat="server" visible ="false">
         <div>
-            <asp:label ID="testLabel" runat="server"></asp:label>
-            <asp:TextBox runat="server"></asp:TextBox>
+            <%-- Display welcome message + disclaimers + get started button --%>
+        </div>
+    </form>
+    <form id="formQuestion" runat="server" visible ="false">
+        <div>
+            <%-- Display content of a Reddit post + answer form --%>
+        </div>
+    </form>
+    <form id="formAnswer" runat="server" visible ="false">
+        <div>
+            <%-- Display whether the question was answered correctly + points worth + link + next question button--%>
+        </div>
+    </form>
+    <form id="formResults" runat="server" visible ="false">
+        <div>
+            <%-- Display summary of questions: links and points per question + total points + start over button--%>
         </div>
     </form>
 </body>
