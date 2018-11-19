@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -36,6 +38,7 @@ namespace GuessTheSubreddit
                 formResults.Visible = false;
                 currentQuestion = 1;
             }
+            
         }
 
         //Sets up the test and shows the first question
@@ -112,6 +115,25 @@ namespace GuessTheSubreddit
                 subreddit = init_subreddit;
                 topComments = init_topComments;
                 subscribers = init_subscribers;
+            }
+
+            protected static List<RedditPost> makeRedditPosts(int amount)
+            {
+                List<RedditPost> posts = new List<RedditPost>();
+                //use reddit API to get  some posts e.g. https://www.reddit.com/r/all/hot.json?limit=1
+                WebRequest request = WebRequest.Create("https://www.reddit.com/r/all/hot.json?limit=1000");
+                WebResponse response = request.GetResponse();
+                Stream data = response.GetResponseStream();
+                string json = String.Empty;
+                using (StreamReader sr = new StreamReader(data))
+                {
+                    json = sr.ReadToEnd();
+                }
+                for (int i = 0; i<amount; i++)
+                {
+
+                }
+                return posts;
             }
         }
     }
