@@ -22,6 +22,24 @@ namespace GuessTheSubreddit {
         protected global::System.Web.UI.HtmlControls.HtmlForm formAbout;
         
         /// <summary>
+        /// welcomeText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label welcomeText;
+        
+        /// <summary>
+        /// startButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button startButton;
+        
+        /// <summary>
         /// formQuestion control.
         /// </summary>
         /// <remarks>
@@ -29,6 +47,33 @@ namespace GuessTheSubreddit {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm formQuestion;
+        
+        /// <summary>
+        /// questionText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label questionText;
+        
+        /// <summary>
+        /// answerBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox answerBox;
+        
+        /// <summary>
+        /// submitButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button submitButton;
         
         /// <summary>
         /// formAnswer control.
@@ -40,6 +85,24 @@ namespace GuessTheSubreddit {
         protected global::System.Web.UI.HtmlControls.HtmlForm formAnswer;
         
         /// <summary>
+        /// feedbackText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label feedbackText;
+        
+        /// <summary>
+        /// ContinueButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ContinueButton;
+        
+        /// <summary>
         /// formResults control.
         /// </summary>
         /// <remarks>
@@ -47,5 +110,23 @@ namespace GuessTheSubreddit {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm formResults;
+        
+        /// <summary>
+        /// resultsText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label resultsText;
+        
+        /// <summary>
+        /// RestartButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button RestartButton;
     }
 }
