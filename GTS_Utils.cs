@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json.Linq;
 
 public class GTS_Utils
 {
@@ -97,5 +98,12 @@ public class GTS_Utils
         return true;
     }
 
-    public static 
+    /**
+     * Returns whether a reddit post (represented by a JToken) is "proper."
+     * A post is proper if it is safe for work, not from a quarantined subreddit, and not a spoiler
+     */
+    public static Boolean isProper(JToken redditPost)
+    {
+         return !redditPost.Value<bool>("over_18") && !redditPost.Value<bool>("quarantine") && !redditPost.Value<bool>("spoiler")
+    }
 }
